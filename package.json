@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "npm --prefix backend install && npm --prefix frontend install && npm --prefix frontend run build",
-    "start": "npm --prefix backend run start"
+    "build": "npm run build --workspace=frontend"
+    "start": "npm run start --workspace=backend"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,5 @@
   "bugs": {
     "url": "https://github.com/dh8116/DFIC/issues"
   },
-  "homepage": "https://github.com/dh8116/DFIC#readme"
+  "homepage": "https://github.com/dh8116/DFIC"
 }
