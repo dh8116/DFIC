@@ -8,8 +8,8 @@
     "backend"
   ],
   "scripts": {
-    "build": "npm install && npm run build --workspace=frontend",
-    "start": "npm run start --workspace=backend"
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "start": "cd backend && npm run start"
   },
   "repository": {
     "type": "git",
