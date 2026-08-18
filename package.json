@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "workspaces": [
-    "frontend",
-    "backend"
-  ],
   "scripts": {
-    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build --",
     "start": "cd backend && npm run start"
   },
   "repository": {
