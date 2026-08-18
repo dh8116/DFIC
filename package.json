@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "cd backend && npm install && cd ../frontend && npm install && npx vite build",
-    "start": "cd backend && npm run start"
+    "build": "npx --prefix backend npm install && npx --prefix frontend npm install && npx --prefix frontend vite build",
+    "start": "node backend/src/main.js"
   },
   "repository": {
     "type": "git",
