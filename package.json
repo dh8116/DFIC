@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
-    "build": "npm run build --workspace=frontend"
+    "build": "npm run build --workspace=frontend",
     "start": "npm run start --workspace=backend"
   },
   "repository": {
